@@ -4,7 +4,7 @@ import validateUser from "../middlewares/validateUser.js";
 
 const router = Router();
 
-router.post('/transaction', postTransaction);
+router.post('/transactions', postTransaction);
 router.get('/transactions', validateUser, getTransaction);
 
 export default router;
